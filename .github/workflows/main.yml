@@ -1,0 +1,35 @@
+name: build-deploy
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Node
+      use: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Build Docs
+      env:
+        NODE_OPTIONS: --max_old_space_size=8192
+      run: |-
+        npm run docs:build
+        > src/.vuepress/dist/.nojekyll
+
+    - name: Deploy Docs
+      uses: JamelIves/github-pages-deploy-action@v4
+      with: 
+        branch: gh-page
+        folder: src/.vuepress/dist
+     
+
+      
