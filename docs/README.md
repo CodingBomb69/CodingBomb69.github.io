@@ -5,11 +5,11 @@ heroText: 彗星文库
 tagline: 繁星似海 熠熠生辉
 actions:
   - text: 博客
-    link: https://blog.csdn.net/passwordgloo
+    link: https://www.chitchat.top
     type: primary
-  - text: 关于
-    link: about.md
-    type: secondary
+  # - text: 关于
+  #   link: about.md
+  #   type: secondary
 features:
 - title: 笔记
   details: Markdown语言，简洁高效记录每一刻
