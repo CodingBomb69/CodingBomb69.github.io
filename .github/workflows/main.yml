@@ -17,13 +17,15 @@ jobs:
       use: actions/setup-node@v3
       with:
         node-version: 18
-
+    
+    - name: Install dependencies
+      run: npm install
+      
     - name: Build Docs
       env:
         NODE_OPTIONS: --max_old_space_size=8192
-      run: |-
-        npm run docs:build
-        > src/.vuepress/dist/.nojekyll
+      run: npm run docs:build
+     
 
     - name: Deploy Docs
       uses: JamelIves/github-pages-deploy-action@v4
