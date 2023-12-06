@@ -9,5 +9,11 @@ export const siderbarZh: SidebarConfig = {
             text: 'React',
             children: ['/react/','/react/basic.md']
         }
+    ],
+    '/js': [
+        {
+            text: 'Js',
+            children: ['/js/','/js/basic.md']
+        }
     ]
 }

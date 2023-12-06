@@ -7,6 +7,7 @@ export const navbarZh: NavbarConfig = [
         // 该元素将一直处于激活状态
         activeMatch: '/',
     },
+    
     {
         text: "框架",
         children: [
@@ -30,8 +31,13 @@ export const navbarZh: NavbarConfig = [
             [
                 { text: 'HTML', link: 'https://1m29yg5p67.k.topthink.com/@html' },
                 { text: 'Markdown', link: 'https://1m29yg5p67.k.topthink.com/@markdown' },
-                { text: 'CSS', link: 'https://1m29yg5p67.k.topthink.com/@css3' }
+                { text: 'CSS', link: 'https://1m29yg5p67.k.topthink.com/@css3' },
+                { text: 'js', link: '/js' }
             ],
+    },
+    {
+        text: '小破站',
+        link: 'https://www.chitchat.top',
     },
 
 ]
