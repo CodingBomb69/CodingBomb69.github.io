@@ -92,6 +92,10 @@ console.log('str',str)  //{String{'aaa'}}
 ![Alt text](https://pic.chitchat.top/images/js_string.png)
 
 
+## IIFE
 
+立即执行函数就是生命一个匿名函数，并马上调用这个函数，执行结束后被垃圾回收，它并不是闭包，但是可以实现闭包效果。
+IIFE可以用来保护变量不被污染（建立一个块级作用域）
+立即执行函数的this执行window
 
 
